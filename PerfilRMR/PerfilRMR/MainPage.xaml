@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PerfilRMR.MainPage"
+             Visual="Material"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
+
+    <StackLayout BackgroundColor="#f4f4f4">
+
+        <controls:CircleImage Source="RMR.png" 
+                       HorizontalOptions="Center"
+                       BorderColor="#ae2029"
+                       BorderThickness="3"
+                       WidthRequest="300"
+        />
+
+
+
+        <Label  Text="ROBERT MENDOZA R."
+                        TextColor="#2c3e50" 
+                         FontSize= "35"
+                        FontAttributes= "Bold"
+                        Padding= "10"
+                        HorizontalOptions= "CenterAndExpand"
+                        VerticalOptions= "CenterAndExpand"
+        />
+
+
+            <Label Text="ING.SISTEMAS Y COMPUTACION" 
+                TextColor="#1414b8"
+                FontSize="24"
+                FontAttributes="Bold"             
+      Padding="0"
+      HorizontalOptions="Center"
+      VerticalOptions="CenterAndExpand" />
+
+        <Label Text="🚀😊Enfocado en el desarrollo frontend y la gestión de datos, busco desafíos que fusionen la creatividad visual con la solidez técnica. Con experiencia en Xamarin y un enfoque innovador, estoy listo para contribuir a proyectos tecnológicos de vanguardia.🚀😊"
+            TextColor="Black"
+            FontSize="18"
+            FontAttributes="Bold"
+            FontFamily="sans-serif"   
+            Margin="8"
+            Padding="10,10,10,10"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="CenterAndExpand"         
+         />
+
+
+        <Label Text="Mis Redes Sociales"
+           TextColor="#44bd32"
+            FontSize="25"
+            Padding="0"
+               FontAttributes="Bold"
+             FontFamily = "Lobster"
+         HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"   />
+
+
+        <StackLayout Orientation="Vertical" HeightRequest="80" BackgroundColor="Transparent" Padding="10">
+
+            <StackLayout Spacing="0" BackgroundColor="#b7c3dc" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button BackgroundColor="#b7c3dc" Image="youtube.png"  HeightRequest="{OnPlatform Android=90}" WidthRequest="{OnPlatform Android=80}" x:Name="btnYoutube" Clicked="btnYoutube_Clicked" />
+                <Button BackgroundColor="#b7c3dc" Image="linkedin.png" HeightRequest="{OnPlatform Android=90}" WidthRequest="{OnPlatform Android=80}" x:Name="btnVerlinkedin"  Clicked="btnVerlinkedin_Clicked"/>
+                <Button BackgroundColor="#b7c3dc" Image="twitter.png"  HeightRequest="{OnPlatform Android=90}" WidthRequest="{OnPlatform Android=80}" x:Name="btnVerTwitter" Clicked="btnVerTwitter_Clicked" />
+                <Button BackgroundColor="#b7c3dc" Image="instram.png"  HeightRequest="{OnPlatform Android=90}" WidthRequest="{OnPlatform Android=80}" x:Name="btnVerInstagrams" Clicked="btnVerInstagrams_Clicked"/>
+                <Button BackgroundColor="#b7c3dc" Image="facebook.png" HeightRequest="{OnPlatform Android=90}" WidthRequest="{OnPlatform Android=80}" x:Name="btnVerFacebook" Clicked="btnVerFacebook_Clicked"/>
+            </StackLayout>
+
+        </StackLayout>
+
+
+    </StackLayout>
+
+</ContentPage>
